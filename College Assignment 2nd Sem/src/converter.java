@@ -15,11 +15,10 @@ public class converter {
     public static void main(String []args){
         Scanner sc=new Scanner(System.in);
         System.out.println("1. convert celsius to fahrenheit");
-        System.out.println("1. convert fahrenheit to celsius");
+        System.out.println("2. convert fahrenheit to celsius");
         System.out.println("Enter your choice : ");
         int a=sc.nextInt();
         converter k=new converter();
-//        converter n=new converter();
         switch (a){
             case 1 :
                 System.out.println("Enter celsius temperature : ");
@@ -34,6 +33,5 @@ public class converter {
             default :
                 System.out.println("Enter correct choice");
         }
-
     }
 }
