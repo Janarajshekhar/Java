@@ -15,7 +15,7 @@ class B extends A{
         System.out.println("Area = "+a);
     }
 }
-public class Impliment_single_iheritance {
+public class Implement_single_inheritance {
     public static void main(String []args){
         B a=new B();
         a.length_width();
