@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class binary_search {
@@ -11,20 +10,20 @@ public class binary_search {
         int[] arr = new int[n];
 
         // Input array elements
-        System.out.println("Enter " + n + " numbers:");
+        System.out.println("Enter " + n + " numbers in sorted order:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
         // Sort the array before binary search
-        Arrays.sort(arr);
-        System.out.println("Sorted array: " + Arrays.toString(arr));
+//        Arrays.sort(arr);
+//        System.out.println("Sorted array: " + Arrays.toString(arr));
 
         // Input the key to search
         System.out.print("Enter the search element : ");
-        int key = sc.nextInt();
+        int k = sc.nextInt();
 
-        int index = binarySearch(arr, key);
+        int index = binarySearch(arr, k);
 
         if (index != -1) {
             System.out.println("Element found at index no.: " + index);
@@ -36,13 +35,13 @@ public class binary_search {
     }
 
     // Binary search method
-    public static int binarySearch(int[] arr, int key) {
+    public static int binarySearch(int[] arr, int k) {
         int low = 0, high = arr.length - 1;
         while (low <= high) {
             int mid = (low + high) / 2;
-            if (arr[mid] == key) {
+            if (arr[mid] == k) {
                 return mid;
-            } else if (arr[mid] < key) {
+            } else if (arr[mid] < k) {
                 low = mid + 1;
             } else {
                 high = mid - 1;
