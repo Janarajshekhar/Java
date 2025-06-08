@@ -18,32 +18,36 @@ public class binary_search {
 
         // Sort the array before binary search
         Arrays.sort(arr);
+        System.out.println("Sorted array: " + Arrays.toString(arr));
 
         // Input the key to search
         System.out.print("Enter the search element : ");
         int key = sc.nextInt();
 
-        // Binary Search
-        int low = 0, high = n - 1;
-        boolean found = false;
+        int index = binarySearch(arr, key);
+
+        if (index != -1) {
+            System.out.println("Element found at index no.: " + index);
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+
+        sc.close();
+    }
+
+    // Binary search method
+    public static int binarySearch(int[] arr, int key) {
+        int low = 0, high = arr.length - 1;
         while (low <= high) {
             int mid = (low + high) / 2;
-
             if (arr[mid] == key) {
-                System.out.println("Element found at index no.: " + mid);
-                found = true;
-                break;
+                return mid;
             } else if (arr[mid] < key) {
                 low = mid + 1;
             } else {
                 high = mid - 1;
             }
         }
-
-        if (!found) {
-            System.out.println("Element not found in the array.");
-        }
-
-        sc.close();
+        return -1;
     }
 }
