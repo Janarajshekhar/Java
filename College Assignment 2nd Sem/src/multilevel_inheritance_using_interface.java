@@ -9,7 +9,7 @@ class area_of_circle implements circle{
     }
 }
 class circumference_of_circle extends area_of_circle{
-    public void circumference(Double r){
+    public void circumference(double r){
         double c=2*3.14*r;
         System.out.println("Circumference = "+c);
     }

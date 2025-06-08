@@ -10,7 +10,7 @@ class area implements Box{
 }
 public class single_inheritance_using_interface {
     public static void main(String []args){
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter length and width : ");
         double l=sc.nextDouble();
         double w=sc.nextDouble();
