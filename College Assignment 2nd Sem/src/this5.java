@@ -13,6 +13,7 @@ class area_{
     }
 }
 public class this5 {
+
     public static void main(String[] args) {
         area_ a=new area_();
         a.setWidth(5.0);
