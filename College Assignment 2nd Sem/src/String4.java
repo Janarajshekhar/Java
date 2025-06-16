@@ -7,7 +7,6 @@ public class String4 {
         String str4 = new String("Hello");
 
         System.out.println(str1.compareTo(str2));
-        System.out.println(str1.compareTo(str2));
         System.out.println(str1.compareTo(str3));
         System.out.println(str1.compareTo(str4));
     }
