@@ -1,4 +1,4 @@
-package World;
+package FileHandler;
 import java.io.*;
 import java.util.Scanner;
 public class FileException {
